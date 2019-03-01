@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+      <title>Open Leadership Training Series : Open Project Maintenance</title>
+      <meta name="description" content="">
+      <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon.png?1">
+
+      <link href="/css/mofo-bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="/css/syntax.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+      <div class="page container-fluid">
+        <div class="row">
+          
+          <div id="navigation" class="col-md-3 col-xs-12 sidebar" role="navigation">
+            <div class="sidebar-header">
+  <a href="http://wikiinclusivity.in">
+    <img src="/img/mozilla-wordmark-white.svg" alt="Mozilla Open Leadership Training Series" class="moz-logo" />
+  </a>
+  <!-- <button aria-label="toggle" class="glyphicon glyphicon-menu-hamburger hidden-lg hidden-md"></button> -->
+</div>
+
+<ul class="sidebar-menu list-unstyled">
+  
+
+
+  
+  <li>
+    <a href="/articles/readme/"> README</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/introduction-to-open-leadership/">1. Intro to Open Leadership</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/opening-your-project/">2. Opening Your Project</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/building-communities-of-contributors/">3. Building Communities</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/get-your-project-online/">4. Get Your Project Online</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/github-for-collaboration/">5. GitHub for Collaboration</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/open-communications/">6. Open Communications</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/running-awesome-community-events/">7. Running Awesome Events</a>
+      
+  </li>
+
+  
+  <li class="selected">
+    <a href="/articles/open-project-maintenance/">8. Open Project Maintenance</a>
+      
+        
+          
+
+<ul class="sidebar-subitems">
+
+  
+  <li class="selected">
+    <a class=" current"
+      href="/articles/open-project-maintenance/open-project-maintenance/">Open Project Maintenance
+    </a>
+  </li>
+
+</ul>
+        
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/open-leadership-outro-and-next-steps/">9. Open Leadership Outro</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/articles/glossary/"> Glossary</a>
+      
+  </li>
+
+</ul>
+
+
+<footer>
+  <a href="https://github.com/mozilla/open-leadership-training-series">See the Code on GitHub</a>
+</footer>
+          </div>
+          <div id="content" class="col-md-9 col-xs-12">
+            <div class="lesson-content">
+<div class="page-header">
+  <h2>
+    8.1.
+    Open Project Maintenance
+  </h2>
+</div>
+<div class="details">
+  <div class="row p-y-1">
+  
+    <div class="col-sm-8">
+    <blockquote>
+      <i>Create a maintenance plan to prolong the life of your project and keep it accessible for your community and others.</i>
+    </blockquote>
+    </div>
+  
+    <div class="col-sm-4">
+       <time>60 mins</time>
+      <a target="_blank" class="suggest-changes" href="https://github.com/mozilla/open-leadership-training-series/edit/gh-pages/_articles/open-project-maintenance/open-project-maintenance.md">Suggest changes</a>
+    </div>
+  </div>
+  
+  <div class="row p-y-1">
+    <div class="col-sm-4">
+      
+      <h5>Format</h5>
+      <p>Youâ€™ll complete a project in GitHub.</p>
+
+      
+    </div>
+    <div class="col-sm-4">
+      
+      <h5>Prerequisites</h5>
+      <p>Your community project and its documentation and materials in your GitHub repo</p>
+
+      
+    </div>
+    <div class="col-sm-4">
+      
+      <h5>Materials</h5>
+      <p>Access to your GitHub project repo</p>
+
+      
+    </div>
+  </div>
+  
+</div>
+<ul id="markdown-toc">
+  <li><a href="#mentorship-as-maintenance" id="markdown-toc-mentorship-as-maintenance">Mentorship as Maintenance</a></li>
+  <li><a href="#maintaining-the-stuff" id="markdown-toc-maintaining-the-stuff">Maintaining the Stuff</a></li>
+  <li><a href="#questions-to-consider" id="markdown-toc-questions-to-consider">Questions to Consider</a></li>
+  <li><a href="#assignment--audit-your-documentation-and-fill-in-the-blanks" id="markdown-toc-assignment--audit-your-documentation-and-fill-in-the-blanks"><span class="assignment">Assignment: </span> Audit Your Documentation and Fill in the Blanks</a></li>
+  <li><a href="#assignment--create-a-maintenance-plan-and-add-it-to-github" id="markdown-toc-assignment--create-a-maintenance-plan-and-add-it-to-github"><span class="assignment">Assignment: </span> Create a Maintenance Plan and Add it to GitHub</a></li>
+  <li><a href="#assignment--file-issues-and-set-milestones-for-your-check-ins" id="markdown-toc-assignment--file-issues-and-set-milestones-for-your-check-ins"><span class="assignment">Assignment: </span> File Issues and Set Milestones for Your Check-Ins</a></li>
+</ul>
+
+<h3 id="mentorship-as-maintenance">Mentorship as Maintenance</h3>
+
+<p>Imagine reaching the end of your project. Youâ€™ve shipped an open source product to a community of users who helped build it.</p>
+
+<p>Itâ€™s a natural time to ask, â€œWhatâ€™s next?â€� However, your project still needs your attention if itâ€™s to remain functional and useful in the long term. Maintenance of your open project is essential to its longevity and and is needed in order to be adopted by communities similar to yours.</p>
+
+<p>Mentorship in an important, but often overlooked a next step. Maintaining your project is as much about keeping its technology fresh - or at least functional - as it is about continuing your relationship with your contributors. As an open leader, you should continue to find ways to support them even after the official end of your shared project. Perhaps your next step is to mentor someone who wants to become an open leader, as well, and to serve as a contributor on their project.</p>
+
+<p>This draft of a <a href="https://github.com/MozillaFoundation/curriculum-workshop/blob/master/march-8-2016/g-doc-transcript.md">mentorship rubric</a> for women mentors came out of the inaugural <a href="https://teach.mozilla.org/community/curriculum-workshop/">Mozilla Curriculum Workshop</a> webcast on International Womenâ€™s Day. Consider forking or cloning it into your own GitHub repo and developing its guidelines further for your own mentorship work with community members.</p>
+
+<p><a href="https://github.com/MozillaFoundation/curriculum-workshop/blob/master/march-8-2016/g-doc-transcript.md"><img src="https://lh4.googleusercontent.com/_4h4xPUhInqRys3fyQ_45hnrSg9A24UxqPec-a3wc_ZuDLlg0m6moNQgXgX1t_s-ggRkjvQ8HvxqKMl04REyKwzvKvlzagU4WXRVR8oTNi1GSfsefL2SaeFoeXQMQozEbHst3m-h" alt="" /></a></p>
+
+<p>What would you add to those guidelines? What kind of mentorship practices should you adopt to help others, but also push yourself forward as a leader and community support? As a mentor, how would you use guidelines like these to help acclimate a mentee to the culture, contribution guidelines, and code of conduct for your project?</p>
+
+<p>You can also help your contributors move along the â€œcommittment curveâ€� to deepen their engagement with, and contribute to your project. Check out <a href="http://ateam-bootcamp.readthedocs.io/en/latest/guide/curve.html">this curve from the A-Team Bootcamp</a> to help you consider how community members can â€œlevel-up.â€�</p>
+
+<h3 id="maintaining-the-stuff">Maintaining the Stuff</h3>
+
+<p>GitHub is a fine place to host your project as it enters maintenance mode; depositing your work and documentation in this kind of repository keeps its available for others to fork, clone, adapt, and improve over time. You donâ€™t need to update your project every day, but you should be able to update it when people offer suggestions or make pull requests through Git. You should also expect some questions or even requests for assistance from users who discover your project online and want to localize it for their communities.</p>
+
+<p>As a first step in drafting and implementing your project maintenance plan, audit your documentation to see if there are parts of your project that arenâ€™t adequately explained. Be sure to fill in any gaps in documentation so potential users know which parts of your project do what and how they do it.</p>
+
+<p>Consider setting aside a certain amount of time per week or month to check in on your project and with your community via your projectâ€™s GitHub issues. If your project has a website hosted on GitHub Pages or another sever, keep the contact information on that site up to date. If your project collects user-data, review what gets collected frequently to make sure the data comes through in a useful format and doesnâ€™t expose private or sensitive information to anyone visiting your repo. In general, plan to check in on your project frequently enough to make sure itâ€™s working correctly and accessible to anyone who needs it.</p>
+
+<p>Additionally, draft and upload documentation to your repo, outlining your plan for project maintenance. Take feedback from project participants and contributors and consider recruiting a volunteer with whom you can share maintenance duties.</p>
+
+<p>For live communication between you and your contributors, set up a chat room through a service like <a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Getting_Started_with_IRC">IRC</a>, <a href="https://gitter.im/">Gitter</a>, or <a href="http://www.mattermost.org/">Mattermost</a> where people can ask questions and connect.</p>
+
+<p>If your project makes heavy use of open data, check out <a href="https://docs.google.com/presentation/d/1kZd-ZD5lru5a7jIbyi9q8cBYCCAKRnIBSRvixYFtoF0/edit?pref=2&amp;pli=1#slide=id.g1088c5b110_0_72">this presentation on Open Data Reuse</a> from the <a href="https://mozillascience.org/">Mozilla Science Lab</a>. Youâ€™ll want to ensure that your data â€œis made easily and freely available for anyone to access, use, and share without restrictionâ€� while addressing how you approach human data use, data ownership, and data formatting through your documentation.</p>
+
+<p>If your project makes use of a particular open code-base for data visualization, web development, or any other kind of scripting, youâ€™ll want make such dependencies clear in your documentation and in the comments of your coded products. Part of your maintenance plan should be checking for updates for any of the APIs, coding languages, or libraries you use in your project and implementing them to keep your work as accessible as possible for others.</p>
+
+<p>Finally, think about how you might deprecate, or stop supporting, your project if it outlasts its usefulness to its users. Is there a way to share its content and documentation even after it stops working? Can you turn the project over to new maintainers in the project community? How will its ultimate form the work you and your community members did create it?</p>
+
+<h3 id="questions-to-consider">Questions to Consider</h3>
+
+<p>To help draft your maintenance plan and sustain your project, answer questions like these.</p>
+
+<p><strong>Logistical</strong></p>
+
+<ul>
+  <li>Which parts of your documentation do you need to maintain or update?</li>
+  <li>Which parts of your content or codebase do you need to maintain or update?</li>
+  <li>How often should you perform maintenance on your repo?</li>
+</ul>
+
+<p><strong>Interpersonal</strong></p>
+
+<ul>
+  <li>How will you identify and recruit community members who want to help maintain the project?</li>
+  <li>How will you decide when to end maintenance?</li>
+  <li>How will you keep your projectâ€™s documentation and content or codebase discoverable and functional enough to help communities that need and find it?</li>
+</ul>
+
+<h3 id="assignment--audit-your-documentation-and-fill-in-the-blanks"><span class="assignment">Assignment: </span> Audit Your Documentation and Fill in the Blanks</h3>
+<p>(30 minutes)</p>
+
+<p>Read through the GitHub documentation for your project. Look for gaps in your documentation and fill-in-the-blanks with new documents that provide explanations for how you and the community implemented pieces of work that are missing initial documentation. Also clarify anything that sounds clunky or jargony so itâ€™s clear to the most diverse audience of users possible. Finally, update anything in the documentation thatâ€™s changed in the course of your project.</p>
+
+<h3 id="assignment--create-a-maintenance-plan-and-add-it-to-github"><span class="assignment">Assignment: </span> Create a Maintenance Plan and Add it to GitHub</h3>
+<p>(15 minutes)</p>
+
+<p>Draft your maintenance plan and share it with your community on GitHub. Your plan should describe:</p>
+
+<ul>
+  <li>Who is responsible for which parts of the plan.</li>
+  <li>Expected time commitments from each person or for each role.</li>
+  <li>How you and your team will maintain your technology and fix bugs.</li>
+  <li>How you and your team will maintain your data.</li>
+  <li>How you and your team will help others fork and use your project.</li>
+  <li>How and when you and your team will deprecate or sunset and archive your project.</li>
+  <li>How you and your community will stay in touch during the maintenance phase of your project.</li>
+</ul>
+
+<p>Upload it to your repo and invite comments, suggestions, and pull requests that might improve it or cover any blind-spots you had while writing it. Survey contributors to see if any of them would like to volunteer to help maintaining the project in the long-term.</p>
+
+<h3 id="assignment--file-issues-and-set-milestones-for-your-check-ins"><span class="assignment">Assignment: </span> File Issues and Set Milestones for Your Check-Ins</h3>
+<p>(15 minutes)</p>
+
+<p>Finally, add new issues and milestones in GitHub that reflect the steps and scheduling in your maintenance plan. Build on the trust you and your community established in creating the project by stewarding and updating it to ensure its longevity and reliability. Your project is an example of leading and working in the open that can inform and inspire other communities and projects in the future.</p>
+
+
+
+
+
+ 
+ <a class="btn btn-lg btn-default btn-next" href="/articles/open-leadership-outro-and-next-steps/">
+next:
+Open Leadership Outro &nbsp;
+<i class="fa fa-play" aria-hidden="true"></i>
+</a>
+<br />
+
+
+
+<p class="help-us">
+    <edit></edit>
+    Help us improve content and
+    <a target="_blank" href="https://github.com/mozilla/open-leadership-training-series/edit/gh-pages/_articles/open-project-maintenance/open-project-maintenance.md">suggest changes</a> to this page.
+</p>
+</div>
+
+          </div>
+        </div>
+
+        <div class="row">
+        <footer class="col-sm-12">
+    <div class="mofooter">
+      <div class="icons">
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/img/footer-icon-twitter.svg"><a target="_blank" href="https://twitter.com/MozOpenLeaders">Twitter</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/img/footer-icon-irc.svg"><a target="_blank" href="https://chat.mozillafoundation.org/mozilla/channels/mozfest-open-projects">Chat</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/img/footer-icon-email.svg"><a target="_blank" href="mailto:abby@mozillafoundation.org">Email</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/img/footer-icon-github.svg"><a target="_blank" href="https://github.com/mozilla/open-leadership-training-series">Github</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/img/footer-icon-terms.svg"><a target="_blank" href="https://www.mozilla.org/en-US/about/legal/">Legal</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/img/cc-logo.svg"><a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">License</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/img/footer-icon-conduct.svg"><a target="_blank" href="https://www.mozilla.org/en-US/about/governance/policies/participation/">Participation Guidelines</a></div>
+        </div>
+      </div>
+      <div class="footer-content"><a class="logo" href="https://mozilla.org"><img src="/img/mozilla-wordmark-white.svg" width="105" height="30"></a>
+        <p>Mozilla is a global non-profit dedicated to putting you in control of your online experience and shaping the future of the web for the public good. Visit us at <a href="https://mozilla.org" target="_blank">mozilla.org</a></p>
+      </div>
+    </div>
+  </footer>
+        </div>
+      </div>
+      <script>
+      function WebAnalytics() {
+       var _dntStatus = navigator.doNotTrack || navigator.msDoNotTrack;
+       var fxMatch = navigator.userAgent.match(/Firefox\/(\d+)/);
+       var ie10Match = navigator.userAgent.match(/MSIE 10/i);
+       var w8Match = navigator.appVersion.match(/Windows NT 6.2/);
+       if (fxMatch && Number(fxMatch[1]) < 32) {
+          _dntStatus = 'Unspecified';
+       } else if (ie10Match && w8Match) {
+           _dntStatus = 'Unspecified';
+       } else {
+          _dntStatus = { '0': 'Disabled', '1': 'Enabled' }[_dntStatus] || 'Unspecified';
+       }
+       if (_dntStatus !== 'Enabled'){
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-87658599-3', 'auto');
+        ga('send', 'pageview');
+       }
+      }
+      WebAnalytics();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.js"></script>
+      <script>anchors.add('h3,h4');</script>
+
+    </body>
+</html>
