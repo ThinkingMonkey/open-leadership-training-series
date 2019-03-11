@@ -458,7 +458,7 @@ table {
 
 td, th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #000000;
 }
 
 a.btn {
