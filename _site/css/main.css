@@ -480,6 +480,25 @@ a.btn:hover {
   color: #333399;
 }
 
+a.btn-nxt {
+  border: none;
+  background: #333399;
+  color: #EFEFEF;
+  transition: background 0.2s ease-in-out;
+  border-radius: 2px;
+  white-space:normal;
+  text-decoration: none;
+  padding: 0.85rem 4rem 0.7rem 4rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+a.btn-nxt:hover {
+  opacity: 1;
+  background: #333399;
+  color: #EFEFEF;
+}
 /* PASSING */
 
 @-webkit-keyframes passing {
